@@ -4,7 +4,14 @@ on: workflow_dispatch
 jobs:
   print_hello:
     runs-on: ubuntu-latest
-
     steps:
       - name: Print hello
         run: echo "Hello world!"
+
+  print_full_technical_info:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Print full_tech_info
+      run: sudo lshw
+      
+  
