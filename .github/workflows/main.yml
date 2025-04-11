@@ -9,6 +9,7 @@ jobs:
         run: echo "Hello world!"
 
   print_full_technical_info:
+   needs: print_hello
    runs-on: ubuntu-latest
    steps:
     - name: Print full_tech_info
